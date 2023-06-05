@@ -19,7 +19,7 @@ def create_agent(filename: str):
     """
 
     # Create an OpenAI object.
-    llm = ChatOpenAI(openai_api_key=API_KEY, model_name'gpt-4')
+    llm = ChatOpenAI(openai_api_key=API_KEY, model_name='gpt-4')
 
     # Read the CSV file into a Pandas DataFrame.
     df = pd.read_csv(filename)
