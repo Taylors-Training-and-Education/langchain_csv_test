@@ -1,4 +1,5 @@
 from langchain import OpenAI
+from langchain import ChatOpenAI
 from langchain.agents import create_pandas_dataframe_agent
 import pandas as pd
 import streamlit as st
@@ -17,7 +18,7 @@ def create_agent(filename: str):
     """
 
     # Create an OpenAI object.
-    llm = OpenAI(openai_api_key=API_KEY)
+    llm = OpenAI(openai_api_key=API_KEY, model_name'gpt-4')
 
     # Read the CSV file into a Pandas DataFrame.
     df = pd.read_csv(filename)
